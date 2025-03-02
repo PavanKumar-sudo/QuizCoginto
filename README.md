@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Create a Quiz using AWS Amplify and Cognito (with CI/CD)
+Project Overview
+This project demonstrates how to build a Quiz Application using AWS Amplify and AWS Cognito, integrating CI/CD for seamless deployment. The application is built using React.js, with user authentication handled by Cognito, and hosted on AWS Amplify with automated deployment via GitHub Actions.
+________________________________________
+Project Diagram
+This architecture includes:
+•	AWS Amplify: Frontend hosting and CI/CD pipeline.
+•	AWS Cognito: User authentication service.
+•	VS Code: Development environment.
+•	GitHub: Version control and CI/CD integration.
+________________________________________
+Steps to Reproduce
+1️⃣ Setup Environment
+•	Install Node.js (latest LTS version)
+•	Install AWS CLI and configure AWS credentials
+•	Install Amplify CLI (npm install -g @aws-amplify/cli)
+•	Install React (npx create-react-app my-quiz-app)
+2️⃣ Create React App
+•	Initialize a new React project
+•	Set up basic routing
+•	Add necessary dependencies
+3️⃣ Add Authentication with AWS Cognito
+•	Initialize Amplify (amplify init)
+•	Add authentication (amplify add auth)
+•	Configure Cognito user pool
+•	Push changes (amplify push)
+4️⃣ Add Functionality and Build the Quiz
+•	Implement the quiz logic
+•	Integrate authentication with Cognito
+•	Style the UI for a better user experience
+5️⃣ Push Code to GitHub
+•	Initialize a Git repository (git init)
+•	Connect to GitHub (git remote add origin <repo-url>)
+•	Push changes (git push origin main)
+6️⃣ Host Frontend in AWS Amplify via GitHub (CI/CD)
+•	Connect the GitHub repository to AWS Amplify
+•	Enable automatic deployments
+•	Deploy the application
+7️⃣ Merge and Validate Deployment
+•	Check if the app is hosted successfully
+•	Test authentication and quiz functionality
+•	Merge changes and verify CI/CD workflow
+________________________________________
+Future Enhancements
+✅ Add leaderboard feature ✅ Store quiz results in AWS DynamoDB ✅ Implement real-time quizzes using WebSockets ✅ Enhance UI/UX with animations and themes
+________________________________________
+Getting Started
+Clone this repository and follow the steps above to deploy the application on AWS Amplify.
+# Clone repository
+git clone <repo-url>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Navigate to project directory
+cd my-quiz-app
 
-## Available Scripts
+# Install dependencies
+npm install
 
-In the project directory, you can run:
+# Start development server
+npm start
+________________________________________
+Contributors
+•	Pavan Kumar Vinjamuri
+________________________________________
+License
+This project is licensed under the MIT License.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
