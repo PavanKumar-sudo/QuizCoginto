@@ -1,66 +1,36 @@
-Create a Quiz using AWS Amplify and Cognito (with CI/CD)
-Project Overview
-This project demonstrates how to build a Quiz Application using AWS Amplify and AWS Cognito, integrating CI/CD for seamless deployment. The application is built using React.js, with user authentication handled by Cognito, and hosted on AWS Amplify with automated deployment via GitHub Actions.
-________________________________________
-Project Diagram
-This architecture includes:
-•	AWS Amplify: Frontend hosting and CI/CD pipeline.
-•	AWS Cognito: User authentication service.
-•	VS Code: Development environment.
-•	GitHub: Version control and CI/CD integration.
-________________________________________
-Steps to Reproduce
-1️⃣ Setup Environment
-•	Install Node.js (latest LTS version)
-•	Install AWS CLI and configure AWS credentials
-•	Install Amplify CLI (npm install -g @aws-amplify/cli)
-•	Install React (npx create-react-app my-quiz-app)
-2️⃣ Create React App
-•	Initialize a new React project
-•	Set up basic routing
-•	Add necessary dependencies
-3️⃣ Add Authentication with AWS Cognito
-•	Initialize Amplify (amplify init)
-•	Add authentication (amplify add auth)
-•	Configure Cognito user pool
-•	Push changes (amplify push)
-4️⃣ Add Functionality and Build the Quiz
-•	Implement the quiz logic
-•	Integrate authentication with Cognito
-•	Style the UI for a better user experience
-5️⃣ Push Code to GitHub
-•	Initialize a Git repository (git init)
-•	Connect to GitHub (git remote add origin <repo-url>)
-•	Push changes (git push origin main)
-6️⃣ Host Frontend in AWS Amplify via GitHub (CI/CD)
-•	Connect the GitHub repository to AWS Amplify
-•	Enable automatic deployments
-•	Deploy the application
-7️⃣ Merge and Validate Deployment
-•	Check if the app is hosted successfully
-•	Test authentication and quiz functionality
-•	Merge changes and verify CI/CD workflow
-________________________________________
-Future Enhancements
-✅ Add leaderboard feature ✅ Store quiz results in AWS DynamoDB ✅ Implement real-time quizzes using WebSockets ✅ Enhance UI/UX with animations and themes
-________________________________________
-Getting Started
-Clone this repository and follow the steps above to deploy the application on AWS Amplify.
-# Clone repository
-git clone <repo-url>
+# Create a Quiz app using AWS Amplify and Cognito (with CI/CD)
+## Prerequisites
+Ensure you have the following before starting:
+AWS Account with necessary permissions
+Node.js installed
+GitHub account
+AWS Amplify CLI installed
+## steps to reproduce it
+  I Followed this steps to achieve the the output. To do this Project we need to have following things
+1.Setup Environment
+2. Create React app
+3.Add authentication with Cognito
+4. Add Functionality and staying quiz
+5 push local in Github
+6  Host the front end in amplify via github(CI/CD)
+7  Merge it works!
 
-# Navigate to project directory
-cd my-quiz-app
+## command I used this handson
+ 1. npm install -g @aws-amplify/cli – Installs AWS Amplify CLI globally.
+ 2. amplify configure – Configures Amplify with AWS credentials.
+ 3. npx create-react-app <app-name> – Creates a new React app.
+ 4. cd <app-name> – Navigates into the app directory.
+ 5. amplify init – Initializes Amplify in the project.
+ 6. amplify add auth – Adds authentication (Cognito) to the app.
+ 7. amplify push – Deploys Amplify changes to AWS. After this step you can see the user pool is created in the aws conginto console
+ 8. npm install aws-amplify @aws-amplify/ui-react – Installs Amplify libraries for React. Run this command inside the project directory
+ 9. npm start – Runs the React app in development mode.it will start your application you can see login page
+ 10. Now i am using CICD pipeline to push this code to github and amplify will connect to github to do: git init – Initializes a Git repository.
+ 11. git add . – Stages all changes for commit.
+ 12. git commit -m "Initial commit" – Saves changes with a message.
+ 13. git branch -M main – Renames the main branch to "main."
+ 14. git remote add origin <repository URL> – Links the repo to GitHub.
+ 15. git push -u origin main – Pushes the project to GitHub.
 
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-________________________________________
-Contributors
-•	Pavan Kumar Vinjamuri
-________________________________________
-License
-This project is licensed under the MIT License.
+After this, go to the AWS Amplify Console. You will see the app name that was created during step 8 (amplify init). Click on it and navigate to the "Deploy" section. Select "GitHub" as the deployment source and follow the configuration steps to connect your repository. Once connected, confirm the setup and start the deployment. After the deployment is complete, you will receive a subdomain link. Clicking on it will take you to your application's homepage.
 
