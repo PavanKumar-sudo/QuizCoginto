@@ -1,19 +1,22 @@
-# Create a Quiz app using AWS Amplify and Cognito (with CI/CD)
+# Create a Quiz app using AWS Amplify and Cognito (with CI/CD) in Generation 1
 ## Prerequisites
 Ensure you have the following before starting:
 AWS Account with necessary permissions
 Node.js installed
 GitHub account
 AWS Amplify CLI installed
+## Project Aricheture
+  ![Project Architecture](https://github.com/PavanKumar-sudo/QuizCoginto/blob/main/diagram-export-3-2-2025-10_54_54-AM.png)
+
 ## steps to reproduce it
   I Followed this steps to achieve the the output. To do this Project we need to have following things
-1.Setup Environment
-2. Create React app
-3.Add authentication with Cognito
-4. Add Functionality and staying quiz
-5 push local in Github
-6  Host the front end in amplify via github(CI/CD)
-7  Merge it works!
+ 1. Setup Environment
+ 2. Create React app
+ 3. Add authentication with Cognito
+ 4. Add Functionality and staying quiz
+ 5. push local in Github
+ 6. Host the front end in amplify via github(CI/CD)
+ 7. Merge it works!
 
 ## command I used this handson
  1. npm install -g @aws-amplify/cli – Installs AWS Amplify CLI globally.
